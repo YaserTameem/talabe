@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
+import 'package:talabe/modules/auth_screens/getting_started_screen.dart';
+import 'package:talabe/modules/auth_screens/login_screen.dart';
+import 'package:talabe/modules/auth_screens/signup_screen.dart';
 import 'package:talabe/modules/splash_screen/onboarding_screen.dart';
 import 'package:talabe/modules/splash_screen/splash_screen.dart';
 
@@ -28,6 +31,13 @@ class MyApp extends StatelessWidget {
             GetPage(
                 name: OneBoardingScreen.screenRoute,
                 page: () => const OneBoardingScreen()),
+            GetPage(
+                name: GettingStartScreen.screenRoute,
+                page: () => const GettingStartScreen()),
+            GetPage(
+                name: LoginScreen.screenRoute, page: () => const LoginScreen()),
+            GetPage(
+                name: SignUpScreen.screenRoute, page: () => const SignUpScreen()),
           ],
         );
       },
